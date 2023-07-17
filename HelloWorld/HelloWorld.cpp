@@ -1,16 +1,30 @@
 #include <iostream>
 #include <windows.h>
 
+using namespace std;
 
-int main(int argc, char** argv)
+int main(/*int argc, char** argv*/)
 {
-    //informar cuantos argumentos se enviaron al programa
-    std::cout << "N de argumentos:" << argc << std::endl;
-    for (int i = 0; i < argc; i++)
+
+    byte karma = 128;
+    cout << "Seleccione un numero del 1 al 10";
+    int maldad = 0;
+    cin >> maldad;
+    std::cout << "karma: " << (int)karma << "\n";
+
+
+    for (int i = 0; i < 20; i++)
     {
-        std::cout << "  argv[" << i << "] : " << argv[i] << std::endl;
+        karma += 10;
+
+        switch (karma) {
+        case 10: cout << "bueno" << "\n";
+            break;
+            case 2
+        }
+        //std::cout << "subiendo karma: " << (int)karma << "\n";
     }
-    Sleep(atoi (argv[1]) );
-    std::cout << "Hello Aaron!\n";
+
+    return 0;
 }
 
